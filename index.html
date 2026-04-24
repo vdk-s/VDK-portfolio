@@ -1,209 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S. Venkata Diwakar | Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="S. Venkata Diwakar – Aspiring Data Engineer | Python & SQL Enthusiast. Portfolio showcasing data engineering projects, certifications and internships." />
+  <title>S. Venkata Diwakar | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
+
 <body>
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#hero" class="logo">VD.</a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#honors">Honors</a></li>
-            </ul>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">VD<span>.</span></a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1>S. Venkata<br /><span>Diwakar</span></h1>
+        <p class="hero-tagline">Aspiring Data Engineer &nbsp;|&nbsp; Python &amp; SQL Enthusiast</p>
+        <p class="hero-bio">
+          Computer Science undergraduate building expertise in data engineering,
+          EDA, predictive modeling, and data visualization. Currently seeking
+          internship &amp; full-time opportunities in leading tech companies.
+        </p>
+        <div class="hero-actions">
+          <a href="https://github.com/vdk-s" target="_blank" class="btn btn-outline">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/s-venkata-diwakar-6b0858333" target="_blank" class="btn btn-primary">
+            <i class="fab fa-linkedin"></i> LinkedIn
+          </a>
         </div>
-    </nav>
-
-    <header id="hero" class="hero-section">
-        <div class="hero-content">
-            <div class="profile-img-container fade-in">
-                <img src="profile.jpg" alt="S. Venkata Diwakar" class="profile-img">
-            </div>
-            <h1 class="fade-in delay-1">S. Venkata Diwakar</h1>
-            <h2 class="fade-in delay-2">Aspiring Data Engineer | Python & SQL Enthusiast</h2>
-            
-            <div class="contact-info fade-in delay-3">
-                <p><i class="fas fa-phone-alt"></i> +91 8667491118</p>
-                <p><i class="fas fa-envelope"></i> svenkatadiwakarth@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Kanchipuram, TamilNadu</p>
-            </div>
-
-            <div class="social-links fade-in delay-4">
-                <a href="https://github.com/vdk-s" target="_blank" class="btn"><i class="fab fa-github"></i> GitHub</a>
-                <a href="https://www.linkedin.com/in/s-venkata-diwakar-6b0858333" target="_blank" class="btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            </div>
+        <div class="hero-contact-row">
+          <a href="tel:+918667491118"><i class="fas fa-phone"></i> +91 8667491118</a>
+          <a href="mailto:svenkatadiwakarth@gmail.com"><i class="fas fa-envelope"></i> svenkatadiwakarth@gmail.com</a>
+          <span><i class="fas fa-map-marker-alt"></i> Kanchipuram, TamilNadu</span>
         </div>
-    </header>
-
-    <section id="about" class="section">
-        <h2 class="section-title">About Me</h2>
-        <div class="section-content about-text slide-up">
-            <p>I am Venkata Diwakar, a Computer Science Engineering student interested in Python and SQL. I build projects in data engineering, data cleaning, visualization, and predictive modeling to strengthen my skills. I aim to develop strong expertise in data engineering and prepare for opportunities in leading technology companies.</p>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="profile.jpg" alt="S. Venkata Diwakar" id="hero-img" />
+          <div class="photo-fallback" id="photo-fallback">
+            <i class="fas fa-user"></i>
+          </div>
         </div>
-    </section>
+        <div class="floating-badge badge-1"><i class="fab fa-python"></i> Python</div>
+        <div class="floating-badge badge-2"><i class="fas fa-database"></i> SQL</div>
+        <div class="floating-badge badge-3"><i class="fas fa-chart-bar"></i> Power BI</div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll to explore</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
 
-    <section id="education" class="section">
-        <h2 class="section-title">Education</h2>
-        <div class="section-content education-grid">
-            <div class="edu-card slide-up">
-                <h3>B.E Computer Science and Engineering</h3>
-                <h4>DMI College of Engineering, Chennai</h4>
-                <p class="date"><i class="far fa-calendar-alt"></i> Sept 2023 – May 2027</p>
-            </div>
-            <div class="edu-card slide-up delay-1">
-                <h3>Higher Secondary School</h3>
-                <h4>Victoria Matriculation Higher Secondary School, Kanchipuram</h4>
-                <p class="date"><i class="far fa-calendar-alt"></i> June 2016 – March 2023</p>
-                <p class="grade">Grade: 76/100</p>
-            </div>
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="section-inner">
+      <h2 class="section-label"><span>01</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am <strong>Venkata Diwakar</strong>, a Computer Science Engineering student
+            at DMI College of Engineering, Chennai, passionate about Python and SQL.
+            I build projects in data engineering, data cleaning, visualization, and
+            predictive modeling to continuously strengthen my skills.
+          </p>
+          <p>
+            I aim to develop strong expertise in data engineering and secure
+            opportunities in leading technology companies. My approach combines
+            academic knowledge with hands-on project experience to deliver real value.
+          </p>
         </div>
-    </section>
-
-    <section id="skills" class="section">
-        <h2 class="section-title">Skills</h2>
-        <div class="section-content skills-container">
-            <div class="skill-category slide-up">
-                <h3>Programming</h3>
-                <div class="tags">
-                    <span class="tag">C</span>
-                    <span class="tag">Python</span>
-                    <span class="tag">SQL</span>
-                </div>
-            </div>
-            <div class="skill-category slide-up delay-1">
-                <h3>Libraries</h3>
-                <div class="tags">
-                    <span class="tag">Pandas</span>
-                    <span class="tag">NumPy</span>
-                    <span class="tag">Scikit-Learn</span>
-                    <span class="tag">Matplotlib</span>
-                    <span class="tag">Seaborn</span>
-                </div>
-            </div>
-            <div class="skill-category slide-up delay-2">
-                <h3>Tools & Visualization</h3>
-                <div class="tags">
-                    <span class="tag">Git & GitHub</span>
-                    <span class="tag">VSCode</span>
-                    <span class="tag">Jupyter Notebook</span>
-                    <span class="tag">Power BI</span>
-                </div>
-            </div>
-            <div class="skill-category slide-up delay-3">
-                <h3>Database</h3>
-                <div class="tags">
-                    <span class="tag">MySQL</span>
-                </div>
-            </div>
+        <div class="about-stats reveal reveal-delay-1">
+          <div class="stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-label">Internships</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Certifications &amp; Awards</span>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="experience" class="section">
-        <h2 class="section-title">Experience</h2>
-        <div class="section-content timeline">
-            <div class="timeline-item slide-up">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Data Engineering Intern</h3>
-                    <h4>Oasis Infobyte</h4>
-                    <p class="date">Jan 2026 – Feb 2026</p>
-                    <ul>
-                        <li>Data cleaning, EDA using Python; proficient in Pandas, NumPy, Matplotlib, SQL.</li>
-                        <li>Built sales dashboards, data cleaning pipelines, and house price prediction model.</li>
-                        <li>Used Power BI for reporting.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-item slide-up">
-                <div class="timeline-dot"></div>
-                <div class="timeline-content">
-                    <h3>Developer Intern</h3>
-                    <h4>Oasis Infobyte</h4>
-                    <p class="date">July 2025 – Aug 2025</p>
-                    <ul>
-                        <li>Built a Text-Based Chat Application using Python socket programming.</li>
-                        <li>Built a Random Password Generator.</li>
-                        <li>Strengthened core Python skills.</li>
-                    </ul>
-                </div>
-            </div>
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-label"><span>02</span> Education</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge">B.E — Current</span>
+            <h3>B.E Computer Science and Engineering</h3>
+            <p class="edu-institution">DMI College of Engineering, Chennai</p>
+            <p class="edu-date"><i class="far fa-calendar"></i> Sept 2023 – May 2027</p>
+          </div>
         </div>
-    </section>
-
-    <section id="projects" class="section">
-        <h2 class="section-title">Projects & Research</h2>
-        <div class="section-content projects-grid">
-            <div class="project-card slide-up">
-                <h3>EDA on Retail Sales Dataset</h3>
-                <p>EDA on 260+ records, 24 features; data cleaning, statistical distributions, outlier detection, Matplotlib visualizations.</p>
-                <div class="project-tags">
-                    <span class="ptag">Python</span>
-                    <span class="ptag">Pandas</span>
-                    <span class="ptag">Matplotlib</span>
-                    <span class="ptag">EDA</span>
-                </div>
-            </div>
-            <div class="project-card slide-up delay-1">
-                <h3>House Price Prediction</h3>
-                <p>Linear regression model, 80/20 train-test split, evaluated using MSE, RMSE, R²=0.546, visualized actual vs predicted.</p>
-                <div class="project-tags">
-                    <span class="ptag">Python</span>
-                    <span class="ptag">Scikit-Learn</span>
-                    <span class="ptag">Linear Regression</span>
-                    <span class="ptag">ML</span>
-                </div>
-            </div>
-            <div class="project-card slide-up delay-2 research-card">
-                <div class="badge">Research</div>
-                <h3>Smart Torn Currency Exchange System</h3>
-                <p>Proposed an ML + IoT system inside ATM booths for automated damaged currency detection using computer vision, UV sensors, and secure banking API integration.</p>
-            </div>
+        <div class="edu-card reveal reveal-delay-1">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge">Higher Secondary</span>
+            <h3>Grade 76 / 100</h3>
+            <p class="edu-institution">Victoria Matriculation Higher Secondary School, Kanchipuram</p>
+            <p class="edu-date"><i class="far fa-calendar"></i> June 2016 – March 2023</p>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section id="honors" class="section">
-        <h2 class="section-title">Honors, Certifications & Hackathons</h2>
-        <div class="section-content honors-grid">
-            <div class="honor-card slide-up">
-                <i class="fas fa-certificate icon"></i>
-                <p>IBM Watson Machine Learning Certification</p>
-            </div>
-            <div class="honor-card slide-up">
-                <i class="fas fa-certificate icon"></i>
-                <p>Power BI Certification – L&T</p>
-            </div>
-            <div class="honor-card slide-up">
-                <i class="fas fa-medal icon gold"></i>
-                <p>1st Place – TALAOS Technical Quiz Competition</p>
-            </div>
-            <div class="honor-card slide-up">
-                <i class="fas fa-medal icon gold"></i>
-                <p>1st Place – King's College Anime Showdown</p>
-            </div>
-            <div class="honor-card slide-up">
-                <i class="fas fa-trophy icon trophy"></i>
-                <p>Best Project Award – SRM College AIMEE</p>
-            </div>
-            <div class="honor-card slide-up">
-                <i class="fas fa-star icon star"></i>
-                <p>Shortlisted – Smart India Hackathon 2025</p>
-            </div>
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="section-inner">
+      <h2 class="section-label"><span>03</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-group reveal">
+          <div class="skill-group-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
         </div>
-    </section>
+        <div class="skill-group reveal reveal-delay-1">
+          <div class="skill-group-icon"><i class="fas fa-layer-group"></i></div>
+          <h3>Libraries</h3>
+          <div class="tag-list">
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Scikit-Learn</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-2">
+          <div class="skill-group-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools</h3>
+          <div class="tag-list">
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">VSCode</span>
+            <span class="tag">Jupyter Notebook</span>
+          </div>
+        </div>
+        <div class="skill-group reveal reveal-delay-3">
+          <div class="skill-group-icon"><i class="fas fa-chart-pie"></i></div>
+          <h3>Visualization &amp; DB</h3>
+          <div class="tag-list">
+            <span class="tag">Power BI</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">Matplotlib</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>&copy; 2026 S. Venkata Diwakar. Designed with <i class="fas fa-heart"></i></p>
-    </footer>
+  <!-- ===== EXPERIENCE ===== -->
+  <section id="experience" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-label"><span>04</span> Experience</h2>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-left">
+            <span class="tl-date">Jan 2026 – Feb 2026</span>
+            <span class="tl-company">Oasis Infobyte</span>
+          </div>
+          <div class="tl-dot"></div>
+          <div class="tl-right">
+            <div class="tl-card">
+              <span class="tl-badge">Data Analytics Intern</span>
+              <ul>
+                <li>Performed data cleaning and EDA using Python.</li>
+                <li>Proficient in Pandas, NumPy, Matplotlib and SQL.</li>
+                <li>Built sales dashboards, data cleaning pipelines and a house price prediction model.</li>
+                <li>Created interactive reports using Power BI.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-left">
+            <span class="tl-date">July 2025 – Aug 2025</span>
+            <span class="tl-company">Oasis Infobyte</span>
+          </div>
+          <div class="tl-dot"></div>
+          <div class="tl-right">
+            <div class="tl-card">
+              <span class="tl-badge">Developer Intern</span>
+              <ul>
+                <li>Built a Text-Based Chat Application using Python socket programming.</li>
+                <li>Developed a Random Password Generator in Python.</li>
+                <li>Strengthened core Python programming skills through practical projects.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="section-inner">
+      <h2 class="section-label"><span>05</span> Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/vdk-s/OIBSIB_DATA-ANALYTICS_LEVEL-1_TASKNO-1" target="_blank"
+                class="proj-link" title="View on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <h3>EDA on Retail Sales Dataset</h3>
+          <p>
+            Performed exploratory data analysis on a retail sales dataset with 260+ records
+            and 24 features. Covered data cleaning, statistical distributions, outlier
+            detection and Matplotlib visualizations to uncover business insights.
+          </p>
+          <div class="proj-tags">
+            <span>Python</span><span>Pandas</span><span>Matplotlib</span><span>EDA</span>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal reveal-delay-1">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-home"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/vdk-s/OIBSIB_DATA-ANALYTICS_LEVEL-2_TASKNO-5" target="_blank"
+                class="proj-link" title="View on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <h3>House Price Prediction</h3>
+          <p>
+            Built a linear regression model with an 80/20 train-test split. Evaluated
+            using MSE, RMSE and R²=0.546. Visualized actual vs. predicted values
+            to analyse model performance and accuracy.
+          </p>
+          <div class="proj-tags">
+            <span>Python</span><span>Scikit-Learn</span><span>Linear Regression</span><span>ML</span>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal reveal-delay-2">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-money-bill-wave"></i></div>
+            <div class="project-links">
+              <a href="https://github.com/vdk-s/DAMAGED-CURRENCY-EXCHANGE" target="_blank" class="proj-link"
+                title="View on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+          <h3>Damaged Currency Exchange</h3>
+          <p>
+            A Python-based application that detects and processes damaged Indian currency notes.
+            Currently supports ₹20, ₹200 and ₹500 denominations. Uses image processing
+            techniques to assess damage level and determine exchange eligibility as per RBI guidelines.
+          </p>
+          <div class="proj-tags">
+            <span>Python</span><span>Image Processing</span><span>OpenCV</span><span>₹20 ₹200 ₹500</span>
+          </div>
+        </div>
+
+        <!-- Research -->
+        <div class="project-card project-research reveal reveal-delay-3">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-flask"></i></div>
+            <div class="research-badge"><i class="fas fa-microscope"></i> Research</div>
+          </div>
+          <h3>Smart Torn Currency Exchange System</h3>
+          <p>
+            Proposed an ML + IoT-based system embedded inside ATM booths for automated
+            detection of damaged currency using computer vision and UV sensors, integrated
+            with a secure banking API for seamless exchange processing.
+          </p>
+          <div class="proj-tags">
+            <span>ML</span><span>IoT</span><span>Computer Vision</span><span>Python</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HONORS ===== -->
+  <section id="honors" class="section section-alt">
+    <div class="section-inner">
+      <h2 class="section-label"><span>06</span> Certifications, Honors &amp; Hackathons</h2>
+      <div class="honors-grid">
+        <div class="honor-card reveal">
+          <div class="honor-icon cert"><i class="fas fa-certificate"></i></div>
+          <div class="honor-text">
+            <span class="honor-type">Certification</span>
+            <p>IBM Watson Machine Learning Certification</p>
+          </div>
+        </div>
+        <div class="honor-card reveal">
+          <div class="honor-icon cert"><i class="fas fa-certificate"></i></div>
+          <div class="honor-text">
+            <span class="honor-type">Certification</span>
+            <p>Power BI Certification – L&amp;T (Larsen &amp; Toubro)</p>
+          </div>
+        </div>
+        <div class="honor-card reveal">
+          <div class="honor-icon gold"><i class="fas fa-medal"></i></div>
+          <div class="honor-text">
+            <span class="honor-type">🥇 1st Place</span>
+            <p>TALAOS Technical Quiz Competition</p>
+          </div>
+        </div>
+        <div class="honor-card reveal">
+          <div class="honor-icon gold"><i class="fas fa-medal"></i></div>
+          <div class="honor-text">
+            <span class="honor-type">🥇 1st Place</span>
+            <p>King's College Anime Showdown Competition</p>
+          </div>
+        </div>
+        <div class="honor-card reveal">
+          <div class="honor-icon trophy"><i class="fas fa-trophy"></i></div>
+          <div class="honor-text">
+            <span class="honor-type">🏆 Best Project Award</span>
+            <p>SRM College AIMEE Project Expo</p>
+          </div>
+        </div>
+        <div class="honor-card reveal">
+          <div class="honor-icon hack"><i class="fas fa-laptop-code"></i></div>
+          <div class="honor-text">
+            <span class="honor-type">Hackathon – Shortlisted</span>
+            <p>Smart India Hackathon 2025 (First Round)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="section-inner contact-inner">
+      <h2 class="section-label"><span>07</span> Let's Connect</h2>
+      <p class="contact-sub">I'm open to internships, full-time opportunities, and collaboration. Feel free to reach
+        out!</p>
+      <div class="contact-cards">
+        <a href="mailto:svenkatadiwakarth@gmail.com" class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <span>svenkatadiwakarth@gmail.com</span>
+        </a>
+        <a href="tel:+918667491118" class="contact-card">
+          <i class="fas fa-phone"></i>
+          <span>+91 8667491118</span>
+        </a>
+        <a href="https://www.linkedin.com/in/s-venkata-diwakar-6b0858333" target="_blank" class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn Profile</span>
+        </a>
+        <a href="https://github.com/vdk-s" target="_blank" class="contact-card">
+          <i class="fab fa-github"></i>
+          <span>GitHub Profile</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>Designed &amp; Built by <strong>S. Venkata Diwakar</strong> &copy; 2026</p>
+    <p class="footer-location"><i class="fas fa-map-marker-alt"></i> Kanchipuram, TamilNadu</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
