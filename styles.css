@@ -246,7 +246,7 @@ img { display: block; max-width: 100%; }
   flex-shrink: 0;
 }
 .photo-ring {
-  width: 280px; height: 280px;
+  width: 340px; height: 340px;
   border-radius: 50%;
   border: 5px solid var(--primary);
   box-shadow: var(--shadow-lg);
@@ -755,7 +755,7 @@ footer strong { color: var(--white); }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 12px 24px; border-radius: 0; }
   .hamburger { display: block; }
-  .photo-ring { width: 200px; height: 200px; }
+  .photo-ring { width: 240px; height: 240px; }
   .section { padding: 70px 20px; }
   .section-label { font-size: 1.5rem; }
   .contact-card { min-width: unset; width: 100%; }
